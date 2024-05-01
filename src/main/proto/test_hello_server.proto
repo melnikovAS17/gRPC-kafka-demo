@@ -1,0 +1,20 @@
+syntax = "proto3";
+package ru.aston.lab.example.grpc;
+
+  message HandshakeRequest  {
+
+    string message = 1;
+    string uuid = 2;
+    string name = 3;
+
+  }
+
+  message HandshakeResponse {
+
+    string message = 1;
+
+  }
+
+  service HandshakeService {
+    rpc exchangeMessages(HandshakeRequest) returns (HandshakeResponse);
+  }
