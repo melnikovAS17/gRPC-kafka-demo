@@ -1,1 +1,1 @@
-insert into messages(message, uuid, name) VALUES ('Hi from client!', '11128hh72', 'Oleg');
+INSERT INTO messages(message, uuid, name) VALUES ('Hi from client!', '11128hh72', 'Oleg');

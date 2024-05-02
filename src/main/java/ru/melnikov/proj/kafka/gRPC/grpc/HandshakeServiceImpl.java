@@ -1,11 +1,11 @@
-package ru.melnikov.proj.kafka.gRPC.grpc.service;
+package ru.melnikov.proj.kafka.gRPC.grpc;
 
 import io.grpc.stub.StreamObserver;
 import net.devh.boot.grpc.server.service.GrpcService;
 import ru.aston.lab.example.grpc.TestHelloServer;
 import ru.aston.lab.example.grpc.HandshakeServiceGrpc;
-import ru.melnikov.proj.kafka.gRPC.grpc.service.dao.entity.ClientMessage;
-import ru.melnikov.proj.kafka.gRPC.grpc.service.dao.impl.MessageSaverService;
+import ru.melnikov.proj.kafka.gRPC.grpc.dao.entity.ClientMessage;
+import ru.melnikov.proj.kafka.gRPC.grpc.dao.services.MessageSaverService;
 
 
 @GrpcService

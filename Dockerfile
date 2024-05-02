@@ -8,7 +8,7 @@ RUN mvn install -Dmaven.test.skip
 
 
 
-FROM openjdk:17
+FROM openjdk:17-slim
 
 WORKDIR /opt/app
 EXPOSE 8080

@@ -14,10 +14,10 @@ import ru.melnikov.demo.gRPCtest.client.NewAccountEvent;
 import java.util.HashMap;
 import java.util.Map;
 
-@Configuration
+//@Configuration
 // можно настроить кафку таким образом
 public class KafkaConfig {
-
+/*
     //сетим бутстрап сервер
     @Value("${spring.kafka.producer.bootstrap-servers}")
     private String bootstrapServers;
@@ -39,16 +39,16 @@ public class KafkaConfig {
         //retries - кол-во попыток, которое сделает producer, если с первого раза отдать сообщение не получилось
         conf.put(ProducerConfig.RETRIES_CONFIG, 0);
         // через сколько мс будет отправляться повторно сообщ
-       /* conf.put(ProducerConfig.RETRY_BACKOFF_MS_CONFIG,0); */
+       *//* conf.put(ProducerConfig.RETRY_BACKOFF_MS_CONFIG,0); *//*
         // сколько времени будет тратиться на попытки достучаться до брокера в мс (здесь 1 минута)
-       /*  conf.put(ProducerConfig.DELIVERY_TIMEOUT_MS_CONFIG,60000); */
+       *//*  conf.put(ProducerConfig.DELIVERY_TIMEOUT_MS_CONFIG,60000); *//*
         // сколько времени будем накапливтаь сообщения перед отправкой мс (здесь будет отправляться по 1 сообщению)
         conf.put(ProducerConfig.LINGER_MS_CONFIG, 0);
         // время сколько будем ждать ответа от брокера/ов в мс
-        /* conf.put(ProducerConfig.REQUEST_TIMEOUT_MS_CONFIG,30000); */
+        *//* conf.put(ProducerConfig.REQUEST_TIMEOUT_MS_CONFIG,30000); *//*
         // если при доставке сообщения в брокер не получили ответа от него, после ретрая
         //не будет создана копия сообщения если оно там уже есть
-        /* conf.put(ProducerConfig.ENABLE_IDEMPOTENCE_CONFIG,true); */
+        *//* conf.put(ProducerConfig.ENABLE_IDEMPOTENCE_CONFIG,true); *//*
         return conf;
     }
     //bean принимает наши конфиги
@@ -74,5 +74,5 @@ public class KafkaConfig {
                 // означение ниже 1 -> ошибка
                 .configs(Map.of("min.insync.replicas","1"))
                 .build();
-    }
+    }*/
 }

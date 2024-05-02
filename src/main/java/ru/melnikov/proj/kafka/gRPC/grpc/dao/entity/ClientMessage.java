@@ -1,4 +1,4 @@
-package ru.melnikov.proj.kafka.gRPC.grpc.service.dao.entity;
+package ru.melnikov.proj.kafka.gRPC.grpc.dao.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

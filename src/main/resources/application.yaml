@@ -14,17 +14,20 @@ spring:
 
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5433/${POSTGRES_DB}
-    username: ${POSTGRES_USER}
-    password: ${POSTGRES_PASSWORD}
+    url: jdbc:postgresql://localhost:5431/account_db_server
+    username: postgres
+    password: postgres
   jpa:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+        hbm2ddl:
+          auto: update
     database: postgresql
+
 
 grpc:
   server:
-    port: ${GRPC_PORT}
+    port: 8085
 
 
